@@ -31,7 +31,7 @@ const Country = ({ country, handleVisitedCountry, handleVisitedFlag }) => {
       <button onClick={handleVisited}>
         {visited ? "Visited" : "Interested"}
       </button>
-      <p>
+      <div>
         {visited
           ? "I have visited this country..."
           : "I want to visit this country!!"}
@@ -41,7 +41,7 @@ const Country = ({ country, handleVisitedCountry, handleVisitedFlag }) => {
           handleVisitedCountry={handleVisitedCountry}
           handleVisitedFlag={handleVisitedFlag}
         ></CountryDetail>
-      </p>
+      </div>
     </div>
   );
 };

@@ -1,4 +1,13 @@
-const CountryData = ({ country, handleVisitedCountry, handleVisitedFlag }) => {
+const CountryData = (props) => {
+  const { country, handleVisitedCountry, handleVisitedFlag } = props;
+
+  console.log(
+    "Inside country data: ",
+    country,
+    handleVisitedCountry,
+    handleVisitedFlag
+  );
+
   return (
     <div>
       <p>
